@@ -1,2 +1,5 @@
 # Ignore VS code cache
 .vscode
+
+# Ignore _pycache_
+._pycache_
