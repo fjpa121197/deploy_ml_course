@@ -10,6 +10,7 @@ OUTPUT_MODEL_PATH = 'logistic_regression.pkl'
 # imputation parameters
 IMPUTATION_DICT = {'age': 28.0, 'fare': 14.4542}
 
+
 # encoding parameters
 FREQUENT_LABELS = {'sex': ['female', 'male'],
                    'cabin': ['C', 'Missing'],
