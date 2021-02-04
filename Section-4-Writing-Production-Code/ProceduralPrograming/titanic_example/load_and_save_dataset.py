@@ -31,7 +31,7 @@ data = pd.read_csv('https://www.openml.org/data/get_csv/16826755/phpMYEkMl')
 data = data.replace('?', np.nan)
 
 data['cabin'] = data['cabin'].apply(get_first_cabin)
- 
+    
 data['title'] = data['name'].apply(get_title)
 
 data['fare'] = data['fare'].astype('float')
