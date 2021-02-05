@@ -146,7 +146,7 @@ class Pipeline:
     def fit(self, data):
         '''pipeline to learn parameters from data, fit the scaler and lasso'''
         
-        # setarate data sets
+        # separate data sets
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
                 data, data[self.target],
                 test_size = self.test_size,
