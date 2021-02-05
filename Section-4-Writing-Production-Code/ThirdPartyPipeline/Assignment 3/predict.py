@@ -7,8 +7,9 @@ import config
 def make_prediction(input_data):
     
     # load pipeline and make predictions
+    _pipe_titanic = joblib.load(filename = config.PIPELINE_NAME)
     # rturn predictions
-
+    results = _pipe_titanic.predict(input_data)
     return results
    
 if __name__ == '__main__':
